@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 68px;
+    box-shadow: 2px 2px 5px rgb(184, 184, 184, 0.6);
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+header {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+}
+
+/* add task button */
+button:active {
+    transform: scale(0.95);
+    box-shadow: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#userSection {
+    background-color: #6a980068;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 10px;
+    box-shadow: 1px 5px 5px 5px rgba(200, 140, 140, 0.3);
+}
+
+#userMessage {
+    color: rgba(94, 94, 94, 0.8);
+    margin-top: 20px;
+    font-family: sans-serif;
+
+}
+
+#userSection input {
+    padding: 8px;
+    width: 50%;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.fa-arrow-down {
+    margin-top: 18px;
+}
+
+#userSection button {
+    padding: 5px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#feedbackContainer {
+    margin-top: 20px;
+}
+
+/* display section for tasks */
+
+#displaySection {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10px;
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+.listItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: monospace;
+    flex-wrap: wrap;
+    overflow: hidden;
+    min-width: 50vw; /* makes sure the list item size starts at the min-width */
+}
+
+
+/* 'x' remove button */
+.removeButton {
+    color: black;
+    background: none;
+    border: none;
+    font-size: 18px;
+    text-shadow: red 1px 0 10px;
+    margin-left: 20px;
+}
+
+/* task checkbox */
+.taskCheckbox {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    accent-color: #000;
+    
+}
+
+/* Align checkbox and 'x' to the right */
+.listItem > .taskCheckbox {
+    margin-left: auto;
+        /* Push to the far right */
+}
+
+/* task completion styling */
+.completed {
+    text-decoration: line-through;
+    color: rgb(184, 184, 184);
+}
